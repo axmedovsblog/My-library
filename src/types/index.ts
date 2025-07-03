@@ -87,20 +87,6 @@ export interface Translations {
   home: {
     title: string
     subtitle: string
-    welcome: string
-    welcomeText: string
-    services: string
-    stats: {
-      books: string
-      readers: string
-      experience: string
-    }
-    serviceItems: {
-      bookRental: { title: string; description: string }
-      internet: { title: string; description: string }
-      events: { title: string; description: string }
-      education: { title: string; description: string }
-    }
   }
   news: {
     title: string

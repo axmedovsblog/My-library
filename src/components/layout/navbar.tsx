@@ -1,13 +1,13 @@
 "use client"
 
 import { Link, useLocation } from "react-router-dom"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select"
-import { useLanguage } from "../contexts/language-context"
-import type { Language } from "../types"
-import logo from "../assets/icons/logo.png"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../../components/ui/select"
+import { useLanguage } from "../../contexts/language-context"
+import type { Language } from "../../types"
+import logo from "../../assets/icons/logo.png"
 import { useState } from 'react'
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu'
-import { Button } from './ui/button'
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '.././ui/dropdown-menu'
+import { Button } from '.././ui/button'
 import { ChevronDown } from 'lucide-react'
 import { IoPersonSharp } from "react-icons/io5";
 
@@ -40,7 +40,7 @@ export function Navbar() {
   ]
 
   return (
-    <nav className="bg-[#1E3A8A] text-white ">
+    <nav className=" container bg-[#1E3A8A] text-white ">
       <div className="container mx-auto">
        <div className='flex items-center justify-between px-[100px] py-[20px]'>
        <div className="flex items-center">
