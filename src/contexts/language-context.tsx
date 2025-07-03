@@ -23,33 +23,6 @@ const translations: Record<Language, Translations> = {
     home: {
       title: "Tuproqqal'a tumani axborot kutubxona markazi",
       subtitle: "Kitob - bizning kuchimiz, kelajagimiz poydevori!",
-      welcome: "Kutubxonamizga xush kelibsiz!",
-      welcomeText:
-        "Tuproqqal'a tumani axborot kutubxona markazi - bu bilim va ma'rifat maskani. Bizning kutubxonamizda minglab kitoblar, zamonaviy texnologiyalar va professional xodimlar sizni kutmoqda. Biz har bir tashrif buyuruvchiga sifatli xizmat ko'rsatishga intilamiz.",
-      services: "Bizning xizmatlarimiz",
-      stats: {
-        books: "Kitoblar soni",
-        readers: "Faol o'quvchilar",
-        experience: "Yillik tajriba",
-      },
-      serviceItems: {
-        bookRental: {
-          title: "Kitob ijara",
-          description: "Minglab kitoblardan tanlang va uyga olib keting",
-        },
-        internet: {
-          title: "Internet xizmati",
-          description: "Tezkor internet va kompyuter xizmatlari",
-        },
-        events: {
-          title: "Tadbirlar",
-          description: "Adabiy kechalar va madaniy tadbirlar",
-        },
-        education: {
-          title: "Ta'lim",
-          description: "Darslar va seminarlar tashkil etish",
-        },
-      },
     },
     news: {
       title: "YANGILIKLAR",
@@ -97,33 +70,6 @@ const translations: Record<Language, Translations> = {
     home: {
       title: "Информационно-библиотечный центр Турпаккалинского района",
       subtitle: "Книга - наша сила, основа нашего будущего!",
-      welcome: "Добро пожаловать в нашу библиотеку!",
-      welcomeText:
-        "Информационно-библиотечный центр Турпаккалинского района - это дом знаний и просвещения. В нашей библиотеке вас ждут тысячи книг, современные технологии и профессиональные сотрудники. Мы стремимся предоставить качественные услуги каждому посетителю.",
-      services: "Наши услуги",
-      stats: {
-        books: "Количество книг",
-        readers: "Активные читатели",
-        experience: "Лет опыта",
-      },
-      serviceItems: {
-        bookRental: {
-          title: "Аренда книг",
-          description: "Выбирайте из тысяч книг и берите домой",
-        },
-        internet: {
-          title: "Интернет-услуги",
-          description: "Быстрый интернет и компьютерные услуги",
-        },
-        events: {
-          title: "Мероприятия",
-          description: "Литературные вечера и культурные мероприятия",
-        },
-        education: {
-          title: "Образование",
-          description: "Организация уроков и семинаров",
-        },
-      },
     },
     news: {
       title: "НОВОСТИ",
@@ -171,33 +117,6 @@ const translations: Record<Language, Translations> = {
     home: {
       title: "Tuproqqala District Information Library Center",
       subtitle: "Books are our strength, the foundation of our future!",
-      welcome: "Welcome to our library!",
-      welcomeText:
-        "Tuproqqala District Information Library Center is a home of knowledge and enlightenment. Our library offers thousands of books, modern technologies, and professional staff waiting for you. We strive to provide quality services to every visitor.",
-      services: "Our Services",
-      stats: {
-        books: "Number of Books",
-        readers: "Active Readers",
-        experience: "Years of Experience",
-      },
-      serviceItems: {
-        bookRental: {
-          title: "Book Rental",
-          description: "Choose from thousands of books and take them home",
-        },
-        internet: {
-          title: "Internet Service",
-          description: "Fast internet and computer services",
-        },
-        events: {
-          title: "Events",
-          description: "Literary evenings and cultural events",
-        },
-        education: {
-          title: "Education",
-          description: "Organizing lessons and seminars",
-        },
-      },
     },
     news: {
       title: "NEWS",
