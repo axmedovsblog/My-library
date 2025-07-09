@@ -80,6 +80,7 @@ export interface Translations {
     home: string
     news: string
     books: string
+    about: string
     information: string
     aboutLibrary: string
     leadership: string
@@ -102,7 +103,18 @@ export interface Translations {
     waitlist: string
     noResults: string
   }
-  
+  about: {
+    location: string
+    contactForm: {
+      title: string
+      subtitle: string
+      submit: string
+      namePlaceholder: string
+      phonePlaceholder: string
+      messagePlaceholder: string
+    }
+    schedule: string
+  }
   aboutLibrary: {
     title: string
     history: string

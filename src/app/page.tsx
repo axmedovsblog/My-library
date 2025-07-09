@@ -7,6 +7,7 @@ import type { JSX } from "react" // Declaring JSX variable
 import { Navbar } from '../components/layout/navbar'
 import { LanguageProvider } from '../contexts/language-context'
 import { HomePage } from '../components/homePage/home-page'
+import { Footer } from '../components/layout/footer-section'
 
 export default function Pages(): JSX.Element {
   return (
@@ -22,7 +23,7 @@ export default function Pages(): JSX.Element {
             <Route path="/biz-haqimizda" element={<AboutPage />} /> */}
             </Routes>
           </main>
-          {/* <Footer /> */}
+         <Footer/>
         </div>
       </Router>
     </LanguageProvider>
