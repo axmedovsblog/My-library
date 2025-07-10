@@ -237,9 +237,9 @@ const translations: Record<Language, Translations> = {
       staff: "Xodimlar",
     },
     footer: {
+      title:"Tuproqqal’a TAKM ",
       description: "Kutubxonamiz so'ngi yillar davomida rivojlanib, zamonaviy kutubxona xizmatlarini taqdim etish maqsadida faoliyat yuritmoqda.",
       contact: "Biz bilan bog'laning",
-      social: "Ijtimoiy tarmoqlar",
       rights: "Barcha huquqlar himoyalangan.",
     },
     about: {
@@ -297,9 +297,9 @@ const translations: Record<Language, Translations> = {
     },
 
     footer: {
+      title:"Tuproqqal’a TAKM ",
       description: "Наша библиотека развивается в последние годы с целью предоставления современных библиотечных услуг.",
       contact: "Свяжитесь с нами",
-      social: "Социальные сети",
       rights: "Все права защищены.",
     },
     about: {
@@ -356,9 +356,9 @@ const translations: Record<Language, Translations> = {
       staff: "Staff",
     },
     footer: {
+      title:"Tuproqqal’a TAKM ",
       description: "Our library has been developing in recent years with the aim of providing modern library services.",
       contact: "Contact Us",
-      social: "Social Networks",
       rights: "All rights reserved.",
     },
     about: {
