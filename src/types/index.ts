@@ -128,9 +128,9 @@ export interface Translations {
     staff: string
   }
   footer: {
+    title: string
     description: string
     contact: string
-    social: string
     rights: string
   }
 }
