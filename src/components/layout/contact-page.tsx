@@ -2,16 +2,16 @@
 
 import type React from "react"
 import { useState } from "react"
-import { Card, CardContent } from "../components/ui/card"
-import { Button } from "../components/ui/button"
-import { Input } from "../components/ui/input"
-import { Textarea } from "../components/ui/textarea"
-import { useLanguage } from "../contexts/language-context"
-import type { ContactForm } from "../types"
 import type { JSX } from "react/jsx-runtime"
+import { useLanguage } from "../../contexts/language-context"
+import type { ContactForm } from "../../types"
+import { Button } from "../ui/button"
+import { Card, CardContent } from "../ui/card"
+import { Input } from "../ui/input"
+import { Textarea } from "../ui/textarea"
 
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet"
 import L from "leaflet"
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet"
 
 // Leaflet marker icon fix
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png"
@@ -58,33 +58,33 @@ export function ContactPage(): JSX.Element {
 				<div className="grid lg:grid-cols-2 gap-8">
 					{/* Map and Location */}
 					<Card className="!py-0 !m-0 overflow-hidden">
-            <CardContent className="!p-0 !m-0 relative">
-              <div className="relative text-center h-full">
-                {/* Title */}
-                <div className="absolute top-4 left-[68px] z-20">
-                  <h3 className="text-[35px] font-semibold text-gray-800 pt-[20px]">{t.about.location}</h3>
-                </div>
-                {/* Map container */}
-                <div className="w-full h-[500px] lg:h-[500px] relative z-10">
-                  <MapContainer
-                    center={[41.3111, 69.2797]}
-                    zoom={13}
-                    scrollWheelZoom={false}
-                    className="w-full h-full"
-                    style={{ height: "100%", width: "100%" }}
-                  >
-                    <TileLayer
-                      attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
-                      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    />
-                    <Marker position={[41.3111, 69.2797]}>
-                      <Popup>Toshkent markazi</Popup>
-                    </Marker>
-                  </MapContainer>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+						<CardContent className="!p-0 !m-0 relative">
+							<div className="relative text-center h-full">
+								{/* Title */}
+								<div className="absolute top-4 left-[68px] z-20">
+									<h3 className="text-[35px] font-semibold text-gray-800 pt-[20px]">{t.about.location}</h3>
+								</div>
+								{/* Map container */}
+								<div className="w-full h-[500px] lg:h-[500px] relative z-10">
+									<MapContainer
+										center={[41.3111, 69.2797]}
+										zoom={13}
+										scrollWheelZoom={false}
+										className="w-full h-full"
+										style={{ height: "100%", width: "100%" }}
+									>
+										<TileLayer
+											attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
+											url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+										/>
+										<Marker position={[41.3111, 69.2797]}>
+											<Popup>Toshkent markazi</Popup>
+										</Marker>
+									</MapContainer>
+								</div>
+							</div>
+						</CardContent>
+					</Card>
 
 					{/* Contact Form */}
 					<Card className="bg-[#1E3A8A] !p-0">

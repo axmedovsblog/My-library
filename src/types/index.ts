@@ -1,3 +1,4 @@
+// Faqat tarjimalar uchun emas, haqiqiy kitoblar ro'yxati uchun interfeys
 export interface Book {
   id: number
   title: string
@@ -6,10 +7,83 @@ export interface Book {
   year: number
   available: boolean
   cover: string
-  isbn?: string
-  pages?: number
-  publisher?: string
-  description?: string
+  format: string
+  pages: number
+}
+
+// Tarjimalar uchun interfeys (frontend UI matnlari)
+export interface Translations {
+  nav: {
+    home: string
+    news: string
+    books: string
+    about: string
+    information: string
+    aboutLibrary: string
+    leadership: string
+  }
+  home: {
+    title: string
+    subtitle: string
+  }
+  news: {
+    title: string
+  }
+  books: {
+    title: string
+    searchPlaceholder: string
+    sortPlaceholder: string
+    languagePlaceholder: string
+    allCategories: string
+    categories: {
+      fiction: string
+      russian: string
+      uzbek: string
+      president: string
+      stories: string
+    }
+    languages: {
+      all: string
+      uzbek: string
+      russian: string
+      english: string
+    }
+    bookInfo: {
+      format: string
+      pages: string
+      download: string
+    }
+  }
+  about: {
+    location: string
+    contactForm: {
+      title: string
+      subtitle: string
+      submit: string
+      namePlaceholder: string
+      phonePlaceholder: string
+      messagePlaceholder: string
+    }
+    schedule: string
+  }
+  aboutLibrary: {
+    title: string
+    history: string
+    mission: string
+    vision: string
+    services: string
+  }
+  leadership: {
+    title: string
+    director: string
+    staff: string
+  }
+  footer: {
+    title: string
+    description: string
+    contact: string
+    rights: string
+  }
 }
 
 export interface NewsItem {
@@ -74,63 +148,3 @@ export interface LeadershipMember {
 }
 
 export type Language = "uzbek" | "russian" | "english"
-
-export interface Translations {
-  nav: {
-    home: string
-    news: string
-    books: string
-    about: string
-    information: string
-    aboutLibrary: string
-    leadership: string
-  }
-  home: {
-    title: string
-    subtitle: string
-  }
-  news: {
-    title: string
-  }
-  books: {
-    title: string
-    searchPlaceholder: string
-    categoryPlaceholder: string
-    allCategories: string
-    available: string
-    borrowed: string
-    rent: string
-    waitlist: string
-    noResults: string
-  }
-  about: {
-    location: string
-    contactForm: {
-      title: string
-      subtitle: string
-      submit: string
-      namePlaceholder: string
-      phonePlaceholder: string
-      messagePlaceholder: string
-    }
-    schedule: string
-  }
-  aboutLibrary: {
-    title: string
-    history: string
-    mission: string
-    vision: string
-    services: string
-  }
-  leadership: {
-    title: string
-    director: string
-    staff: string
-  }
-  footer: {
-    title: string
-    description: string
-    contact: string
-    rights: string
-  }
-}

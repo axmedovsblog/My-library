@@ -10,7 +10,6 @@ interface LanguageContextType {
   t: Translations
   getNewsData: () => any[]
 }
-
 // Static news data with translations
 const newsData = {
   uzbek: [
@@ -157,7 +156,7 @@ const newsData = {
       image: "/placeholder.svg?height=200&width=300",
       excerpt: "More than 500 new books added to the library collection.",
     },
-    {
+    { 
       id: 4,
       title: "Computer courses for youth started",
       date: "12.06.2023",
@@ -215,14 +214,28 @@ const translations: Record<Language, Translations> = {
     },
     books: {
       title: "KITOBLAR",
-      searchPlaceholder: "Kitob yoki muallif nomi...",
-      categoryPlaceholder: "Kategoriya tanlang",
-      allCategories: "Barcha kategoriyalar",
-      available: "Mavjud",
-      borrowed: "Ijarada",
-      rent: "Ijaraga olish",
-      waitlist: "Kutish ro'yxati",
-      noResults: "Qidiruv bo'yicha kitoblar topilmadi.",
+      searchPlaceholder: "Qidirish",
+      sortPlaceholder: "Saralash",
+      languagePlaceholder: "Till",
+      allCategories: "Saralash",
+      categories: {
+        fiction: "Badiiy adabiyotlar",
+        russian: "Rus adabiyotlar",
+        uzbek: "O'zbek adabiyotlari",
+        president: "Prezident asarlari",
+        stories: "Hikoyalar",
+      },
+      languages: {
+        all: "Till",
+        uzbek: "O'zbekcha",
+        russian: "Ruscha",
+        english: "Inglizcha",
+      },
+      bookInfo: {
+        format: "Format",
+        pages: "Kitob betlari soni",
+        download: "Yuklab olish",
+      },
     },
     aboutLibrary: {
       title: "AKM HAQIDA",
@@ -274,14 +287,28 @@ const translations: Record<Language, Translations> = {
     },
     books: {
       title: "КНИГИ",
-      searchPlaceholder: "Название книги или автор...",
-      categoryPlaceholder: "Выберите категорию",
-      allCategories: "Все категории",
-      available: "Доступно",
-      borrowed: "В аренде",
-      rent: "Взять в аренду",
-      waitlist: "Лист ожидания",
-      noResults: "По вашему запросу книги не найдены.",
+      searchPlaceholder: "Поиск",
+      sortPlaceholder: "Сортировка",
+      languagePlaceholder: "Язык",
+      allCategories: "Сортировка",
+      categories: {
+        fiction: "Художественная литература",
+        russian: "Русская литература",
+        uzbek: "Узбекская литература",
+        president: "Произведения Президента",
+        stories: "Рассказы",
+      },
+      languages: {
+        all: "Язык",
+        uzbek: "Узбекский",
+        russian: "Русский",
+        english: "Английский",
+      },
+      bookInfo: {
+        format: "Формат",
+        pages: "Количество страниц",
+        download: "Скачать",
+      },
     },
     aboutLibrary: {
       title: "О ИБЦ",
@@ -334,14 +361,28 @@ const translations: Record<Language, Translations> = {
     },
     books: {
       title: "BOOKS",
-      searchPlaceholder: "Book title or author...",
-      categoryPlaceholder: "Select category",
-      allCategories: "All Categories",
-      available: "Available",
-      borrowed: "Borrowed",
-      rent: "Rent Book",
-      waitlist: "Waiting List",
-      noResults: "No books found for your search.",
+      searchPlaceholder: "Search",
+      sortPlaceholder: "Sort",
+      languagePlaceholder: "Language",
+      allCategories: "All",
+      categories: {
+        fiction: "Fiction Literature",
+        russian: "Russian Literature",
+        uzbek: "Uzbek Literature",
+        president: "Presidential Works",
+        stories: "Stories",
+      },
+      languages: {
+        all: "Language",
+        uzbek: "Uzbek",
+        russian: "Russian",
+        english: "English",
+      },
+      bookInfo: {
+        format: "Format",
+        pages: "Number of pages",
+        download: "Download",
+      },
     },
     aboutLibrary: {
       title: "ABOUT ILC",
@@ -375,7 +416,6 @@ const translations: Record<Language, Translations> = {
     }
   },
 }
-
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
 interface LanguageProviderProps {
