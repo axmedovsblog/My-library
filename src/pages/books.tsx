@@ -225,6 +225,10 @@ export function Books() {
         </div>
 
         {/* Search and Filters */}
+<<<<<<< HEAD
+=======
+        
+>>>>>>> xusniddin
         <div className="flex flex-col md:flex-row gap-4 mb-8 max-w-4xl">
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
